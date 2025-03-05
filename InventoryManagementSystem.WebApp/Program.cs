@@ -1,9 +1,13 @@
+using InventoryManagementSystem.Plugins.InMemory;
+using InventoryManagementSystem.UseCases.PluginInterfaces;
 using InventoryManagementSystem.WebApp.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents();
+
+builder.Services.AddSingleton<IInventoryRepository, InventoryRepository>();
 
 var app = builder.Build();
 

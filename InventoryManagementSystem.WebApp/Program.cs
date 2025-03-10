@@ -1,4 +1,6 @@
 using InventoryManagementSystem.Plugins.InMemory;
+using InventoryManagementSystem.UseCases.Inventories;
+using InventoryManagementSystem.UseCases.Inventories.Interfaces;
 using InventoryManagementSystem.UseCases.PluginInterfaces;
 using InventoryManagementSystem.WebApp.Components;
 
@@ -8,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents();
 
 builder.Services.AddSingleton<IInventoryRepository, InventoryRepository>();
+builder.Services.AddTransient<IViewInventoriesByNameUseCase, ViewInventoriesByNameUseCase>();
 
 var app = builder.Build();
 

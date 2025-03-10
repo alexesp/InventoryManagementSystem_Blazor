@@ -10,7 +10,7 @@ namespace InventoryManagementSystem.CoreBusiness
     {
         public int InventoriId { get; set; }
         public string InventoryName { get; set; }
-        public int Quantiry { get; set; }
+        public int Quantity { get; set; }
         public double Price { get; set; }
     }
 }

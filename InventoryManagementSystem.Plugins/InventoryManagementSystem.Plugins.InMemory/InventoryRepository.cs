@@ -17,10 +17,10 @@ namespace InventoryManagementSystem.Plugins.InMemory
         {
             _inventories = new List<Inventory>()
             {
-                new Inventory { InventoriId = 1, InventoryName = "Bike Seat", Quantiry = 10, Price = 2 },
-                new Inventory { InventoriId = 2, InventoryName = "Bike Body", Quantiry = 10, Price = 15 },
-                new Inventory { InventoriId = 3, InventoryName = "Bike Wheels", Quantiry = 20, Price = 8 },
-                new Inventory { InventoriId = 4, InventoryName = "Bike Pedels", Quantiry = 10, Price = 1 }
+                new Inventory { InventoriId = 1, InventoryName = "Bike Seat", Quantity = 10, Price = 2 },
+                new Inventory { InventoriId = 2, InventoryName = "Bike Body", Quantity = 10, Price = 15 },
+                new Inventory { InventoriId = 3, InventoryName = "Bike Wheels", Quantity = 20, Price = 8 },
+                new Inventory { InventoriId = 4, InventoryName = "Bike Pedels", Quantity = 10, Price = 1 }
             };
         }
         public async Task<IEnumerable<Inventory>> GetInventoriesByNameAsync(string name)

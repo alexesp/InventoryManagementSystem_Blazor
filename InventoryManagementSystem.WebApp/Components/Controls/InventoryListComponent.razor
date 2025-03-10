@@ -16,18 +16,8 @@
 		{
 			foreach (var inv in inventories)
 			{
-				<tr>
-					<td>@inv.InventoryName</td>
-					<td>@inv.Quantity</td>
-					<td>@inv.Price</td>
-					<td>
-						<button 
-							type="button"
-							class="btn btn-light">
-							Editar
-						</button>
-					</td>
-				</tr>
+				<InventoryListComponent Inventory="inv"></InventoryListComponent>
+
 			}
 		}
 	</tbody>
